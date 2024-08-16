@@ -63,6 +63,5 @@ describe('Fundamentals test', () => {
     cy.contains(/You aren't limited to just the/i).should('be.visible')
     cy.getDataBtn('accordion-item-8').click()
     cy.contains(/You aren't limited to just the/i).should('not.be.visible')
-
   })
 })

@@ -1,4 +1,4 @@
-'use client'
+
 import { useState } from 'react'
 import { Button, TextField } from '@mui/material'
 import ItemsAccordion from '../components/Accordion'
@@ -37,9 +37,10 @@ export default function FormsPage(){
     const [subMessage, setSubMessage] = useState('')
     return (
         <main className={styles.main}>
-            <h1 className={styles.header}>Testing Forms</h1>
+            <h1 className={styles.header} data-test="forms-header">Testing Forms</h1>
             <ItemsAccordion items={items} />
             <TextField 
+            data-test="email-text"
             className={styles.input} 
             label="Email" 
             variant="filled" 
